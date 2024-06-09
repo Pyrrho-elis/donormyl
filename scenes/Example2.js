@@ -21,7 +21,7 @@ class Example2 extends Phaser.Scene {
 
     update() {
         this.moveCard(this.king, 5)
-        if (this.king.x > config.width) {
+        if (this.king.x - this.king.width > config.width) {
             this.resetCard(this.king)
         }
     }
